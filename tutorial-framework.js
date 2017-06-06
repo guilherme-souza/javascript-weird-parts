@@ -4,7 +4,7 @@
     return new Greetr.init(firstname, lastname, language);
   }
 
-  //This function is not exposed by the framework
+  //These functions and objects are not exposed by the framework
   var supportedLanguages = ['en', 'es', 'pt'];
 
   var greetings = {
@@ -27,7 +27,7 @@
     return true;
   }
 
-  //All functions that should be exposed by the framework should be in prototype
+  //All functions exposed by the framework will be in prototype
   Greetr.prototype = {
     fullName: function() {
       return this.firstname + ' ' + this.lastname;
