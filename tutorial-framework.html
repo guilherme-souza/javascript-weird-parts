@@ -1,0 +1,14 @@
+<script src="tutorial-framework.js"></script>
+
+<script>
+  var g = G$('Guilherme', 'Souza'); //empty language will set the default language (english)
+
+  //Calling greet from framework
+  g.greet();
+
+  //Calling a chain of functions
+  g.greet().setLanguage('pt').greet(true);
+
+  //Testing an ionvalid language
+  g.setLanguage('fr').greet();
+</script>
